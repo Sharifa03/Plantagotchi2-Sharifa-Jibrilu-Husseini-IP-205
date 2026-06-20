@@ -103,7 +103,7 @@ button:hover {
     border-radius: 10px;
 }
 
-#reset:hover {
+#resetBtn:hover {
     background-color: darkred;
     border-radius: 10px;
 }

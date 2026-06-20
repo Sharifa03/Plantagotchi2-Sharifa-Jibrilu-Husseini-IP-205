@@ -135,7 +135,7 @@ function resetGame() {
     gameText.textContent = ""; 
 }
 
-reset.addEventListener("click", resetGame);
+resetBtn.addEventListener("click", resetGame);
 
 
 

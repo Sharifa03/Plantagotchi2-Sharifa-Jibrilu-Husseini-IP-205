@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* font */
+    /* font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal; */
+
+    /* height for mobile */
+    width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* individual */
+h1 {
+    color: green;
+}
+
+h2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#gameText {
+    color: red;
+}
+
+
+/* smallest elements */
+
+img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The styling of the button self */
+button {
+    width: 120px;
+    height: 40px;
+    border: 10px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+/* How the buttons are styled in the section (placement) */
+.buttons {
+    /* placement */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#reset {
+    width: 400px;
+    height: 40px;
+    border: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    margin-bottom: 10px;
+    justify-content: center;
+
+}
+
+/* the styling of what happens on hover */
+button:hover {
+    background-color: lightpink;
+    border-radius: 10px;
+}
+
+#reset:hover {
+    background-color: darkred;
+    border-radius: 10px;
+}
+
+section {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* stats */
+
+.stats-container {
+    background-color: rgb(175, 242, 175);
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+#waterBar,
+#sunBar,
+#happyBar {
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    height: 20px;
+    overflow: hidden;
+}

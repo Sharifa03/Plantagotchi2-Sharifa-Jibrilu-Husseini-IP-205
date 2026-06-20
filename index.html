@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloe Vera Game</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <h1>🌱 Aloe Vera Game</h1>
+    <main class="game-container">
+        <h2>Plant Stats</h2>
+
+        <section class="stats-container">
+            <!-- water level stat -->
+            <span>💧 water</span>
+            <meter id="waterBar" min="0" max="100" low="33" high="66" optimum="80" value="90"> </meter>
+            <!-- <div class="healthbar"></div> -->
+
+            <!-- sunlight stat -->
+            <span>sunlight</span>
+            <meter id="sunBar" min="0" max="100" low="33" high="66" optimum="80" value="70"> </meter>
+
+            <!-- happy level stat -->
+            <span>happy</span>
+            <meter id="happyBar" min="0" max="100" low="33" high="66" optimum="80" value="80"> </meter>
+        </section>
+        <!-- end stats -->
+
+        <p id="gameText"></p>
+        <!-- bron afbeelding: zelf getekend -->
+        <img id="plant" src="image/alo-vera-happy.png">
+
+        <h2>Actions</h2>
+        <section class="buttons">
+            <button id="water">💧 Water Plant</button>
+            <button id="sunlight">☀️ Give Sunlight</button>
+            <button id="happy"> Give attention</button>
+
+            <button id="resetBtn"> RESET </button>
+        </section>
+        <!-- reset button -->
+        <!-- reset ID wordt later in JS selelecteert met addEventL -->                        
+    
+
+
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

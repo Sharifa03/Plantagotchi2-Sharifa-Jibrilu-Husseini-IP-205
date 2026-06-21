@@ -54,8 +54,6 @@ h2 {
 
 img {
     width: 100%;
-    max-width: 200px;
-    height: 200px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

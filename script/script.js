@@ -25,25 +25,25 @@ gameOverSound.volume = 1;
 //--------------BLOK 1 BUTTONS ON CLICK-----------------//
 //Button functions: Met hulp van lesopdracht 4a "lightbulb" kennis clip: EventListeners, functies, recap&console op DLO
 //button functions - water
-function geefWater() {
+function giveWater() {
     waterBar.value = Number(waterBar.value) + 5;
     console.log("Plant krijgt water");
 }
-waterBtn.addEventListener("click", geefWater);
+waterBtn.addEventListener("click", giveWater);
 
 //button functions - zonlicht
-function geefZon() {
+function giveSun() {
     sunBar.value = Number(sunBar.value) + 5;
     console.log("Plant krijgt zonlicht");
 }
-sunlightBtn.addEventListener("click", geefZon);
+sunlightBtn.addEventListener("click", giveSun);
 
 //button functions - happy
-function geefHappy() {
+function giveHappy() {
     happyBar.value = Number(happyBar.value) + 5;
     console.log("Plant krijgt zonlicht");
 }
-happyBtn.addEventListener("click", geefHappy);
+happyBtn.addEventListener("click", giveHappy);
 
 
 //-------------BLOK 2 IMAGE CHANGE------------------//
@@ -81,47 +81,48 @@ function gameOver() {
     if (waterBar.value <= 0 || sunBar.value <= 0 || happyBar.value <= 0) {
         
         gameText.textContent = "Game Over";
+        plant.src = "image/alo-vera-dying.png";
         gameOverSound.play();
 
         console.log("Game Over");
 
     }
     //hier kan je die dead state plant image neerzetten
-    //extra conditie, 
+    
 }
 
-//---------------------BLOK 3 WAARDE AND GAME OVER------------------------------------//
+//---------------------BLOK 4 WAARDE AND GAME OVER------------------------------------//
 
 //Bar waarde omlaag functies: Met kennis clips: functies, recap&console op DLO, inzicht code klasgenoot, chatgpt
 //haalt waarde omlaag van de water bar
-function verlaagWater() {
+function lowerWater() {
     waterBar.value -= 5;
     checkStats();
     gameOver();
 
     console.log(waterBar.value);
 }
-setInterval(verlaagWater, 2000);
+setInterval(lowerWater, 2000);
 
 //haalt waarde omlaag van de zon bar
-function verlaagZon() {
+function lowerSun() {
     sunBar.value -= 5;
     checkStats();
     gameOver();
 
     console.log(sunBar.value);
 }
-setInterval(verlaagZon, 2000);
+setInterval(lowerSun, 2000);
 
 //haalt waarde omlaag van de happy bar
-function verlaagHappy() {
+function lowerHappy() {
     happyBar.value -= 5;
     checkStats();
     gameOver();
 
     console.log(happyBar.value);
 }
-setInterval(verlaagHappy, 2000);
+setInterval(lowerHappy, 2000);
 
 
 //------------BLOK 5 RESET-------------------//
@@ -149,3 +150,4 @@ resetBtn.addEventListener("click", resetGame);
 //"game over" bleef staan en ookal is het niet de meest nette manier heb ik door 
 // gameText.textContent = ""; te gebruiken de tekst wel weg kunnen halen wanneer je op rest drukt
 //reset tag in html veranderd naar resetBtn
+//ALLE JS in dezelfde taal

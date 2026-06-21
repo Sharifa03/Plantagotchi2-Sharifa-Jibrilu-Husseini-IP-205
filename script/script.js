@@ -87,7 +87,7 @@ function gameOver() {
         console.log("Game Over");
 
     }
-    //hier kan je die dead state plant image neerzetten
+    
     
 }
 
